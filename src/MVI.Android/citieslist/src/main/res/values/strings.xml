@@ -1,0 +1,9 @@
+<resources>
+    <string name="citieslist_error">Error</string>
+    <string name="citieslist_no_results">No results</string>
+    <string name="citieslist_delete">Delete</string>
+    <string name="citieslist_title_add_city_dialog">Add city</string>
+    <string name="citieslist_hint_add_city_dialog">Input city name, please</string>
+    <string name="citieslist_dialog_ok">Ok</string>
+    <string name="citieslist_dialog_cancel">Cancel</string>
+</resources>

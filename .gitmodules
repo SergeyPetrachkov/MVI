@@ -1,0 +1,3 @@
+[submodule "src/MVI.Android/buildSrc"]
+	path = src/MVI.Android/buildSrc
+	url = https://gitlab.com/roman_mityukov/buildsrc.git

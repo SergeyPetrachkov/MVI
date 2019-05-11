@@ -1,0 +1,13 @@
+<resources>
+    <string name="citieslist_title">Текущая погода</string>
+    <string name="core_error_unknown">Unknown error</string>
+    <string name="core_error_network">Network error</string>
+    <string name="core_error_cities_repository_add_city_by_name">Этот город уже есть в списке</string>
+    <string name="core_error_cities_repository_get_city_by_name">Не удалось найти город с таким именем</string>
+    <string name="core_error_cities_repository_get_cities">Не удалось получить данные. Проверьте настройки сети</string>
+    <string name="core_error_cities_repository_local_get_cities">Не удалось прочитать данные из локального хранилища. Попробуйте переустановить приложение из магазина.</string>
+    <string name="core_error_cities_repository_local_set_cities">Не удалось записать данные в локальное хранилище. Попробуйте переустановить приложение из магазина.</string>
+    <string name="core_error_forecast_repository_get_forecast">Не удалось получить данные. Проверьте настройки сети</string>
+    <string name="core_today">Today</string>
+    <string name="core_tomorrow">Tomorrow</string>
+</resources>

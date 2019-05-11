@@ -1,0 +1,48 @@
+import io.rm.android.build.Config
+
+plugins {
+    id("com.android.library")
+    id("kotlin-android")
+    id("kotlin-android-extensions")
+    id("kotlin-kapt")
+}
+
+android {
+    compileSdkVersion(Config.Sdk.COMPILE_SDK_VERSION)
+    defaultConfig {
+        minSdkVersion(Config.Sdk.MIN_SDK_VERSION)
+        targetSdkVersion(Config.Sdk.TARGET_SDK_VERSION)
+        multiDexEnabled = true
+        versionCode = 1
+        versionName = "1.0"
+        testInstrumentationRunner = "io.rm.mvisample.modules.splash.SplashTestRunner"
+    }
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
+        }
+    }
+    packagingOptions {
+        exclude("META-INF/*.kotlin_module")
+    }
+}
+
+dependencies {
+    implementation(project(":core"))
+    implementation(project(":citieslist"))
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    kapt(Config.Dependency.DAGGER_COMPILER)
+    kapt(Config.Dependency.DAGGER_ANDROID_PROCESSOR)
+    implementation(Config.Dependency.MULTIDEX)
+    androidTestImplementation(Config.Dependency.TEST_CORE)
+    androidTestImplementation(Config.Dependency.TEST_RUNNER)
+    androidTestImplementation(Config.Dependency.TEST_EXTENSIONS)
+    androidTestImplementation(Config.Dependency.ESPRESSO_INTENTS)
+    androidTestImplementation(Config.Dependency.MOCKITO_KOTLIN)
+    androidTestImplementation(Config.Dependency.MOCKITO_ANDROID)
+    androidTestImplementation(Config.Dependency.DAGGER)
+    androidTestImplementation(Config.Dependency.DAGGER_ANDROID_SUPPORT)
+    kaptAndroidTest(Config.Dependency.DAGGER_COMPILER)
+    kaptAndroidTest(Config.Dependency.DAGGER_ANDROID_PROCESSOR)
+}

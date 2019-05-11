@@ -1,0 +1,6 @@
+<resources>
+    <string name="title_city_details">Прогноз</string>
+    <string name="city_details_label">Прогноз на %d дней</string>
+    <string name="city_details_wind_speed">%d м/с</string>
+    <string name="citн_details_no_results">Нет данных</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Default cities ids http://bulk.openweathermap.org/sample/city.list.json.gz-->
+    <integer-array
+        name="default_cities">
+        <item>524894</item>
+        <item>498817</item>
+        <item>1496747</item>
+        <item>1486209</item>
+        <item>520555</item>
+        <item>551487</item>
+        <item>1508291</item>
+        <item>1496153</item>
+        <item>499099</item>
+        <item>501175</item>
+    </integer-array>
+</resources>
